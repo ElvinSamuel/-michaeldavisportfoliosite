@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Michael G. Davis (UI/UX Designer)</title>
@@ -10,37 +11,45 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </head>
+
+
+
+
+
+
+
+
   <body>
-    <nav id="myNav">
-            <a href="#resume">Accessibility</a>
-            <a href="#about">Work</a>
-            <a href="#contact">About</a>
+    <nav id="frontNav">
+            <i class="fas fa-align-justify" onclick="openNav()"></i>
         </nav>
+
+        <div class="overlay" id="menuNav">
+            <div id="navItems">
+              <i class="fas fa-times" onclick="closeNav()"></i>
+              <a href="#">Michael Davis</a>
+              <a href="#resume">Accessibility</a>
+              <a href="#about">Work</a>
+              <a href="#contact">About</a>
+            </div>
+        </div>
 
         <scroll-container>
             <scroll-page id="home">
 
-                <div id="plaque">
-
-                    <div id="headBackground">
-                        <img src="./img/ElvinSamuel.png"></img>
-
-
-                    </div>
-
-                    <h1>Elvin M. Samuel</h1>
-                    <h2>Full-Stack Developer</h2>
-                    <p>Plan. Code. Test. Have Some Fun Along The Way.</p>
-                </div>
-
-
+                    <h1>Hi, I'm Michael</h1>
+                    <p>and my passion is crafting experiences that everyone can enjoy.</p>
 
             </scroll-page>
 
 
-            <scroll-page id="resume">
+            <scroll-page id="accessibility">
                 <!--
                 <div id="rightSide">
                     <ul>
@@ -52,7 +61,7 @@
             </scroll-page>
 
 
-            <scroll-page id="about">
+            <scroll-page id="work">
                 <div class="pageName">What I'm Doing</div>
                 <span class="underline"></span>
 
@@ -69,31 +78,11 @@
 
             <scroll-page id="contact">
                 <div class="pageName">Contact Me</div>
-                <span class="underline"></span>
 
-                <div id="formNav" class="overlay">
-
-                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-                    <div class="overlay-content">
-                        <form name="emailMe" method="POST" action="form.php">
-                            <input type="text" name="name" placeholder="What's your name?"/>
-                            <input type="email" name="email" placeholder="Email?"/>
-                            <input type="textarea" name="comments" placeholder="What can I do for you?"/>
-
-                            <span>
-                                <input type="submit" name="submit" value="Submit"/>
-                                <input type="button" value="Back" name="" onclick="closeForm()"/>
-                            </span>
-                        </form>
-                    </div>
-
-                </div>
-
-                <button id="formButton" onclick="openForm()">Let's Talk</button>
             </scroll-page>
 
             <scroll-page id="spacer">
-                    <p>ElvinSamuel.com&copy; Is Copywritten By Absolutely No One. Feel free to use the design if you like it. Check it out on my <a href="#">GitHub</a>.</p>
+                    <p>www.MichaelDavis.com &copy; 2018</p>
             </scroll-page>
 
         </scroll-container>
