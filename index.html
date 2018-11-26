@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Michael G. Davis (UI/UX Designer)</title>
+
+    <!-- For Accessibility -->
+    <meta name="description" content="The portfolio site of Michael G. Davis -- UX/UI Designer & Accessibility Expert">
+    <meta name="keywords" content="Design, Accessibility, UI, UX, User Interface, User Experience">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/master.css">
+
+  </head>
+  <body>
+    <nav id="myNav">
+            <a href="#resume">Accessibility</a>
+            <a href="#about">Work</a>
+            <a href="#contact">About</a>
+        </nav>
+
+        <scroll-container>
+            <scroll-page id="home">
+
+                <div id="plaque">
+
+                    <div id="headBackground">
+                        <img src="./img/ElvinSamuel.png"></img>
+
+
+                    </div>
+
+                    <h1>Elvin M. Samuel</h1>
+                    <h2>Full-Stack Developer</h2>
+                    <p>Plan. Code. Test. Have Some Fun Along The Way.</p>
+                </div>
+
+
+
+            </scroll-page>
+
+
+            <scroll-page id="resume">
+                <!--
+                <div id="rightSide">
+                    <ul>
+
+                    </ul>
+                </div>
+                -->
+
+            </scroll-page>
+
+
+            <scroll-page id="about">
+                <div class="pageName">What I'm Doing</div>
+                <span class="underline"></span>
+
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mi lacus, elementum eu placerat et, vehicula ut magna. Phasellus rutrum et orci finibus viverra. Fusce commodo justo sit amet mi dapibus tristique. Aenean id ultricies felis. Morbi ut quam quis arcu laoreet laoreet eget id libero. Curabitur at velit sodales, feugiat justo a, dictum massa. Phasellus sollicitudin fermentum justo eget tempus.
+
+                        Donec ante metus, venenatis vel massa ac, semper efficitur nulla. Etiam tempor, augue et posuere faucibus, mauris augue dictum ligula, non euismod nulla lorem nec ante. Quisque sit amet libero nec ligula volutpat sollicitudin sit amet vitae lectus. Nam vitae cursus urna, et scelerisque quam. Maecenas finibus et enim nec elementum. Nunc aliquet eros vitae nisl fermentum, in tempus dolor varius. Aenean tristique blandit convallis. Aenean consequat ultrices arcu id facilisis. Praesent vel neque felis. In imperdiet porttitor lectus, et mattis elit lobortis vel. Cras massa magna, eleifend in dignissim quis, viverra in enim.
+                    </p>
+                </div>
+
+            </scroll-page>
+
+
+            <scroll-page id="contact">
+                <div class="pageName">Contact Me</div>
+                <span class="underline"></span>
+
+                <div id="formNav" class="overlay">
+
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <div class="overlay-content">
+                        <form name="emailMe" method="POST" action="form.php">
+                            <input type="text" name="name" placeholder="What's your name?"/>
+                            <input type="email" name="email" placeholder="Email?"/>
+                            <input type="textarea" name="comments" placeholder="What can I do for you?"/>
+
+                            <span>
+                                <input type="submit" name="submit" value="Submit"/>
+                                <input type="button" value="Back" name="" onclick="closeForm()"/>
+                            </span>
+                        </form>
+                    </div>
+
+                </div>
+
+                <button id="formButton" onclick="openForm()">Let's Talk</button>
+            </scroll-page>
+
+            <scroll-page id="spacer">
+                    <p>ElvinSamuel.com&copy; Is Copywritten By Absolutely No One. Feel free to use the design if you like it. Check it out on my <a href="#">GitHub</a>.</p>
+            </scroll-page>
+
+        </scroll-container>
+  </body>
+</html>
