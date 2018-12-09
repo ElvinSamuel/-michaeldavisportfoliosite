@@ -1,7 +1,7 @@
 html,
 body {
-  overflow: scroll;
-  overflow: hidden;
+  /* overflow: scroll; */
+  overflow-y: auto;
 }
 
 html,
@@ -17,14 +17,16 @@ body {
   margin: 0;
 }
 
-scroll-page {
-  width: 100%;
-  height: 500px;
-}
-
 a {
   text-decoration: none;
   color: GoldenRod;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  padding: 5% 0 0 0;
+  margin: 0;
 }
 
 .overlay {
@@ -43,8 +45,19 @@ a {
 /* Each Section */
 #frontNav {
   width: 100%;
-  justify-content: right;
-  background-color: red;
+  height: auto; /* Adjust to icon height */
+  text-align: right;
+  padding-right: 10px;
+  /* background-color: red; */
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+#frontNav > i {
+  font-size: 2em;
+  padding-right: 5%;
 }
 
 #navItems {
@@ -82,7 +95,7 @@ a {
 }
 
 #accessibility {
-  background-color: #555;
+  background-color: pink;
 }
 
 #work {
@@ -95,4 +108,5 @@ a {
 
 #spacer {
   background-color: red;
+  padding: 0;
 }
